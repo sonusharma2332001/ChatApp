@@ -21,14 +21,14 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/"
+            path="/home"
             element={
               <ProtectedRoute>
                 <Home />
               </ProtectedRoute>
             }
           />
-          <Route path="login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Routes>
       </BrowserRouter>
