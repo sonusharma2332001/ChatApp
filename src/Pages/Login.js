@@ -15,7 +15,7 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, email, password)
-      navigate("/")
+      navigate("/home")
     } catch (err) {
       setErr(true);
     }
@@ -61,7 +61,7 @@ export default Login
 
 //     try {
 //       await signInWithEmailAndPassword(auth, email, password);
-//       navigate("/")
+//       navigate("/home")
 //     } catch (err) {
 //       setErr(true);
 //     }
